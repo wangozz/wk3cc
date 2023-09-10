@@ -4,18 +4,14 @@ from restaurant.restaurant import Restaurant
 from customer.customer import Customer
 from review.review import Review
 
-# Set up the database connection
 engine = create_engine('sqlite:///database.db')
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# Define sample data
 
-# Restaurants
 restaurant1 = Restaurant(name='Restaurant A', price=2)
 restaurant2 = Restaurant(name='Restaurant B', price=3)
 
-# Customers
 customer1 = Customer(first_name='John', last_name='Doe')
 customer2 = Customer(first_name='Jane', last_name='Doe')
 
