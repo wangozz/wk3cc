@@ -1,7 +1,7 @@
-# wk3cc
-# Restaurant Review Project
 
-This project is a Python application for managing restaurant reviews using SQLAlchemy, a popular Object-Relational Mapping (ORM) library. It allows you to create and manage restaurants, customers, and reviews, including various operations such as finding the fanciest restaurant, adding and deleting reviews, and more.
+# Restaurant Reviews
+
+This project focuses on building a system to manage restaurant reviews. It includes three main models: `Restaurant`, `Review`, and `Customer`. A `Restaurant` can have multiple reviews, a `Customer` can leave multiple reviews, and a `Review` belongs to both a `Restaurant` and a `Customer`. The relationship between `Restaurant` and `Customer` is many-to-many.
 
 ## Table of Contents
 
@@ -9,17 +9,18 @@ This project is a Python application for managing restaurant reviews using SQLAl
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
+- [Database Setup](#database-setup)
+- [Running the Application](#running-the-application)
+- [Scripts and Files](#scripts-and-files)
 - [Contributing](#contributing)
 - [License](#license)
+
+---
 
 ## Getting Started
 
 ### Prerequisites
 
-Before running the project, make sure you have the following prerequisites installed:
-
-- Python (version 3.6 or higher)
-- SQLAlchemy
-- SQLite (or another compatible database)
+- Python 3.x
+- PostgreSQL
 
